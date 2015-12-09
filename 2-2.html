@@ -1,0 +1,25 @@
+<style>
+#c1,#c2{
+  background: radial-gradient(circle, #456, #200);
+}
+</style>
+<canvas id='c1'></canvas>
+<script>
+ctx=c1.getContext('2d');
+ctx.beginPath();
+ctx.rect(120, 50, 60, 50);
+ctx.fillStyle = '#fff';
+ctx.fill();
+</script>
+
+
+<canvas id='c2'></canvas>
+<script>
+ctx=c2.getContext('2d');
+ctx.shadowBlur = 10;
+ctx.shadowColor = '#fff';
+ctx.beginPath();
+ctx.rect(120, 50, 60, 50);
+ctx.fillStyle = '#fff';
+ctx.fill();
+</script>

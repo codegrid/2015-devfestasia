@@ -1,0 +1,12 @@
+<style>
+#s{display: block;white-space: pre;}
+</style>
+<p>
+<script id="s">
+h=d='data:audio/wav;base64,'+
+    'UklGRiQAAABXQVZFZm10IBAAAAABAAEAwF0AAMBdAAABAAgAZGF0YQAA';
+for(t=0;t++<1e5;)
+  d += String.fromCharCode((Math.random() - .5) * Math.pow(1 - (2*Math.PI % 1), 8) * 100 + 127);
+Z=new Audio(h+btoa(d));
+Z.play();
+</script>
